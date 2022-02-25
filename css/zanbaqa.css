@@ -1,6 +1,7 @@
 :root { 
     --Idcolor2: #eecf39; 
-    --Idcolor : rgb(7, 4, 4) ;
+    --Idcolor : rgb(0, 0, 0) ;
+    --Idcolo3 : rgba(0, 0, 0, 0.445) ;
     --navFontsize : 16px ;
     --navpadding : 1px;
 }
@@ -196,11 +197,22 @@ div.product {
     height: 1.6rem;
     line-height: 40%;
 }
-img.rounded-4 {
+.row .rounded-4 {
     transition: 0.1s ease;
     border: 1px solid var(--Idcolor2);
-
+    height: 400px;
 }
+#carousel-m .rounded-4 {
+    transition: 0.1s linear;
+    border: 3px solid var(--Idcolor2);
+    height: 800px;
+}
+#carousel-m .rounded-4:hover {
+    transition: 0.1s linear;
+    border: 5px dashed var(--Idcolor2);
+    height: 800px;
+}
+
 img.rounded-4:hover {
     border: 1px dashed   var(--Idcolor2);
     transition: 0.1s ease;
@@ -220,3 +232,34 @@ h6.product {
 .carousel-indicators {
     margin-bottom: 0rem;
 }
+
+
+
+
+
+/* Start section About  */
+section.about { 
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+    background-color: var(--Idcolor3);
+    
+}
+.about .lead { 
+    color: var(--Idcolor2);
+    font-size: 25px;
+    margin-top: 15px;
+}
+.about h1 { 
+    color: var(--Idcolor);
+    font-size: 40px;
+}
+.about h1>span { 
+    color: var(--Idcolor2);
+    font-size: 50px;
+}
+.about h1+p { 
+    color: var(--Idcolor);
+    font-size: 30px;
+}
+/* End section About  */
