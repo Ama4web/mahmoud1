@@ -1,7 +1,7 @@
 :root { 
     --Idcolor2: #eecf39; 
     --Idcolor : rgb(0, 0, 0) ;
-    --Idcolo3 : rgba(0, 0, 0, 0.445) ;
+    --Idcolor3 : #eee;
     --navFontsize : 16px ;
     --navpadding : 1px;
 }
@@ -242,8 +242,9 @@ section.about {
     padding-top: 60px;
     padding-bottom: 60px;
     text-align: center;
-    background-color: var(--Idcolor3);
-    
+    background-color: var(--Idcolor); 
+    border-top: 5px solid var(--Idcolor2);
+
 }
 .about .lead { 
     color: var(--Idcolor2);
@@ -251,7 +252,7 @@ section.about {
     margin-top: 15px;
 }
 .about h1 { 
-    color: var(--Idcolor);
+    color: var(--Idcolor2);
     font-size: 40px;
 }
 .about h1>span { 
@@ -259,7 +260,80 @@ section.about {
     font-size: 50px;
 }
 .about h1+p { 
-    color: var(--Idcolor);
+    color: var(--Idcolor2);
     font-size: 30px;
 }
+
+
+/* Statr Social-media decoration */
+ul.SCC {
+    position:relative;
+    bottom:0%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  ul li.SCC {
+    list-style: none;
+  }
+  
+  ul.SCC li a {
+    position: relative;
+    width:60px;
+    height:60px;
+    display:block;
+    text-align:center;
+    margin:0 10px;
+    border-radius: 50%;
+    padding: 6px;
+    box-sizing: border-box;
+    text-decoration:none;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+    background: linear-gradient(0deg, #ddd, #fff);
+    transition: .5s;
+  }
+  
+  ul.SCC li a:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    text-decoration:none;
+  }
+  
+  ul.SCC li a .fab {
+    width:100%;
+    height:100%;
+    display:block;
+    background: linear-gradient(0deg, #fff, #ddd);
+    border-radius: 50%;
+    line-height: calc(60px - 12px);
+    font-size:24px;
+    color: #262626;
+    transition: .5s;
+  }
+  
+  ul.SCC li:nth-child(1) a:hover .fab {
+    color: #3b5998;
+  }
+  
+  ul.SCC li:nth-child(2) a:hover .fab {
+    color: #00aced;
+  }
+  
+  ul.SCC li:nth-child(3) a:hover .fab {
+    color: #dd4b39;
+  }
+  
+  ul.SCC li:nth-child(4) a:hover .fab {
+    color: #007bb6;
+  }
+  
+  ul.SCC li:nth-child(5) a:hover .fab {
+    color: #e4405f;
+  }
+/* End Social-media decoration */
+
 /* End section About  */
